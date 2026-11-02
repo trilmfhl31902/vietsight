@@ -1,0 +1,44 @@
+{
+  "model": "/home/pi/minhtri/best.pt",
+  "sha256": "5ee4fc595466680922694deba2fe20c90ed67a49fc7bda0e777725f0ff569dd0",
+  "labels": {
+    "0": "person",
+    "1": "bicycle",
+    "2": "car",
+    "3": "motorcycle",
+    "4": "bus",
+    "5": "truck",
+    "6": "traffic_light"
+  },
+  "image_shape": [
+    480,
+    640,
+    3
+  ],
+  "checks": [
+    {
+      "imgsz": 320,
+      "highest_score_by_class": {
+        "bus": 0.08815,
+        "traffic_light": 0.05206,
+        "car": 0.05109,
+        "person": 0.02024,
+        "bicycle": 0.00365,
+        "motorcycle": 0.00163,
+        "truck": 0.0012
+      },
+      "person_above_0_45": false
+    },
+    {
+      "imgsz": 640,
+      "highest_score_by_class": {
+        "car": 0.17576,
+        "bus": 0.05734,
+        "person": 0.04267,
+        "truck": 0.01151,
+        "traffic_light": 0.00714
+      },
+      "person_above_0_45": false
+    }
+  ]
+}
